@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Source code for open-source parts - Freedom PDF Pro</title>
+<link rel="icon" href="../assets/favicon.ico">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main style="max-width:860px;margin:2rem auto;padding:0 1rem;line-height:1.5">
+<p><a href="../">&larr; Freedom PDF Pro</a></p>
+<h1>Source code for open-source parts</h1>
+<p>Freedom PDF Pro includes a few open-source parts under GNU licenses. They are shipped unmodified.
+Below is the complete source code for the exact versions included, from their official sources.
+Their license texts are in the <code>licenses</code> folder of the program and under About &gt; Licenses in the app.</p>
+
+<table>
+<thead><tr><th>Part</th><th>Version</th><th>License</th><th>Where in Freedom PDF Pro</th><th>Source code</th></tr></thead>
+<tbody>
+<tr><td>SumatraPDF</td><td>3.6.1</td><td>GNU GPL-3.0</td><td><code>app\tools\SumatraPDF.exe</code> (printing helper, separate program)</td>
+<td><a href="https://github.com/sumatrapdfreader/sumatrapdf/archive/refs/tags/3.6.1rel.tar.gz">sumatrapdf-3.6.1rel.tar.gz</a><br>
+(<a href="https://github.com/sumatrapdfreader/sumatrapdf/tree/3.6.1rel">tag 3.6.1rel</a>; includes the MuPDF copy it is built with)</td></tr>
+<tr><td>MuPDF</td><td>1.27.0</td><td>GNU AGPL-3.0</td><td>built into <code>SumatraPDF.exe</code></td>
+<td><a href="https://mupdf.com/downloads/archive/mupdf-1.27.0-source.tar.gz">mupdf-1.27.0-source.tar.gz</a></td></tr>
+<tr><td>GEOS</td><td>3.14.1</td><td>GNU LGPL-2.1</td><td><code>python\Lib\site-packages\shapely.libs\geos*.dll</code>, <code>geos_c*.dll</code> (from shapely 2.2.0)</td>
+<td><a href="https://download.osgeo.org/geos/geos-3.14.1.tar.bz2">geos-3.14.1.tar.bz2</a><br>
+shapely 2.2.0 (BSD, builds the DLLs): <a href="https://github.com/shapely/shapely/archive/refs/tags/2.2.0.tar.gz">shapely-2.2.0.tar.gz</a></td></tr>
+<tr><td>GNU libiconv</td><td>1.17</td><td>GNU LGPL-2.1</td><td>linked into <code>python\Lib\site-packages\lxml\etree*.pyd</code> (lxml 6.1.3 Windows build)</td>
+<td><a href="https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.17.tar.gz">libiconv-1.17.tar.gz</a><br>
+lxml 6.1.3 (BSD, links it): <a href="https://github.com/lxml/lxml/archive/refs/tags/lxml-6.1.3.tar.gz">lxml-6.1.3.tar.gz</a></td></tr>
+</tbody>
+</table>
+
+<h2>Replacing these parts</h2>
+<p>You may replace GEOS (swap the DLLs in <code>shapely.libs</code>) and lxml with libiconv (rebuild lxml 6.1.3
+from source with your own libiconv and put the new <code>.pyd</code> files in place) with your own changed or newer
+builds. SumatraPDF is a separate program and may be used, changed and shared under the GPL.
+The Freedom PDF Pro license does not forbid this, or reverse engineering to debug such changes.</p>
+
+<h2>Copy on request</h2>
+<p>For at least three years after we last distribute a version of Freedom PDF Pro, we will send this source code
+to anyone who asks, on a physical medium or by download, for no more than our cost of doing so.
+Email <a href="mailto:billf195@gmail.com?subject=Freedom%20PDF%20Pro%20source%20request">billf195@gmail.com</a>
+and name the Freedom PDF Pro version you have.</p>
+
+<p>These parts come with no warranty, to the extent permitted by law; see their licenses.</p>
+</main>
+</body>
+</html>
