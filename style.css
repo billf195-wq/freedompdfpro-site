@@ -20,7 +20,9 @@ section{padding:70px 0}h2{font-size:2.1rem;margin:0 0 8px;color:var(--navy)}.sub
 .ic{font-size:1.6rem}
 #pricing{background:#fff}.prices{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:820px}
 .price{border:2px solid #dbe5f0;border-radius:16px;padding:30px}.price.best{border-color:var(--gold);background:#fffaf0}
-.price .amt{font-size:2.6rem;font-weight:800;color:var(--navy)}.price ul{padding-left:20px;color:var(--muted)}
+.price .amt{font-size:2.6rem;font-weight:800;color:var(--navy);line-height:1.15}.price ul{padding-left:20px;color:var(--muted)}
+.price .amt .was{font-size:1.45rem;font-weight:600;color:var(--muted);text-decoration:line-through;margin-right:10px;letter-spacing:0}
+.price .sale-note{margin:8px 0 0;color:var(--muted);font-size:.95rem}
 .badge{display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;font-size:.8rem;padding:3px 10px;border-radius:20px}
 #mobile{background:linear-gradient(135deg,var(--navy2),#1b6fb0);color:#fff}
 #mobile h2{color:#fff}#mobile .sub{color:#d6ecfb}
